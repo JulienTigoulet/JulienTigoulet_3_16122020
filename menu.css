@@ -3,6 +3,16 @@
 
 .menu-page{
     font-family: 'roboto';
+    background-color:#f6f6f6;
+}
+.menu-page h2{
+    width:40px;
+    border-bottom: 3px solid #99E2D0;
+    font-weight: 300;
+    font-size: 1em;
+    margin-left:40px;
+    margin-bottom:14px;
+    margin-top:40px;
 }
 /* header-menu */
 .menu-header_logonav{
@@ -13,7 +23,6 @@
     margin-left:23px;
     margin-right: 114px;
 }
-
 .menu-header_img{
     height: 254px;
     width: 100%;
@@ -30,4 +39,34 @@ h1{
     display: flex;
     align-items: center;
     justify-content: space-around;
+}
+/* Card menu-page */
+
+.menu-allcard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.menu-card--modifier{
+    width: 350px;
+    height: 69px;
+    background-color: white;
+    border-radius:15px;
+    margin-bottom:14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.menu-card_nom{
+    margin-left:10px;
+}
+.menu-card_intitule-prix{
+    display: flex;
+    justify-content: space-between;
+    margin-left:10px;
+    margin-right:22px;
+}
+.menu-card_prix{
+    font-weight: bold;
 }

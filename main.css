@@ -11,7 +11,10 @@
     margin: auto;
     font-family: 'Roboto';
 }
-
+a{
+    text-decoration: none;
+    color:black;
+}
 /*Header*/
 .siteheader{
     display: flex;
@@ -202,4 +205,7 @@ footer{
 }
 footer p{
     margin-bottom:10px;
+}
+footer a{
+    color:white;
 }
