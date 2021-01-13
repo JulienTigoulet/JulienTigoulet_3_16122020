@@ -1,0 +1,19 @@
+{
+  "name": "site-ohmyfood",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JulienTigoulet/JulienTigoulet_3_16122020.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JulienTigoulet/JulienTigoulet_3_16122020/issues"
+  },
+  "homepage": "https://github.com/JulienTigoulet/JulienTigoulet_3_16122020#readme",
+  "description": ""
+}

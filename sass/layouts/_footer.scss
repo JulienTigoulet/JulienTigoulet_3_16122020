@@ -1,0 +1,32 @@
+.footer{
+    height: 197px;
+    color:white;
+    background-color: #353535;
+    display: flex;
+    flex-direction:column;
+    padding-left:25px;
+    & p{
+        margin-bottom:10px;
+    }
+    & a{
+        color:white;
+        text-decoration: none;
+    }
+    &-logo{
+        margin-bottom: 23px;
+        margin-top: 24px;
+        color:white;
+        font-size:1.2rem;
+        font-family:'Shrikhand','Sans-serif'
+    }
+    &-flex_i-p{
+        display: flex;
+    }
+    &_restaurant i{
+        margin-right:17px;
+    }
+    &_partenaire i{
+        margin-right:10px;
+    }
+    
+}

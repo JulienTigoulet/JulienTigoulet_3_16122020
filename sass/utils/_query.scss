@@ -1,0 +1,51 @@
+
+@import"_breakpoint.scss";
+@import"_media.scss";
+
+@include xlphone{
+    .section-card{
+        width:290px;
+        overflow: hidden;
+    }
+    .nav-btn{
+        width: 280px;
+    }
+    .section-card-img_new{
+        left:80px;
+    }
+}
+@include tablet{
+    .siteheader{
+        width: 50%;
+        position:absolute;
+    }
+    .nav{
+        position: relative;
+        width: 50%;
+        left: 50%;
+        top: 50%;
+        height: 399px;
+    }
+    .nav-h2{
+        margin:0;
+        padding-top: 30px;
+        padding-bottom: 20px;
+        display:flex;
+        justify-content: center;
+    }
+    .section_flex{
+        flex-direction:row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .section-card{
+        padding: 10px;
+    }
+    .section{
+        height: 750px;
+        max-width: 1000px;
+        display: flex;
+        justify-content: center;
+    }
+}
