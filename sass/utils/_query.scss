@@ -13,11 +13,30 @@
     .section-card-img_new{
         left:80px;
     }
+    .menu-header_titre-i{
+        bottom:35px;
+    }
+    .menu-header h1{
+        font-size:1.8rem;
+    }
+    .menu-header_logonav i{
+        margin-right:23px;
+    }
+    .menu-card--modifier{
+        max-width: 300px;
+        
+    }
+    .menu-card--modifier:hover .menu-card_hover_box{
+        left: 250px;
+    }
 }
 @include tablet{
     .siteheader{
         width: 50%;
         position:absolute;
+    }
+    .menu-header_logonav{
+        max-width: 400px;
     }
     .nav{
         position: relative;
@@ -33,19 +52,38 @@
         display:flex;
         justify-content: center;
     }
+    .menu-card--modifier{
+        min-width: 500px;
+        width: 80%;
+    }
+    .menu-card--modifier:hover .menu-card_hover_box{
+        left: 450px;
+    }
     .section_flex{
         flex-direction:row;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+        max-width: 1000px;
     }
     .section-card{
-        padding: 10px;
+        margin: 10px;
     }
     .section{
         height: 750px;
-        max-width: 1000px;
+        margin-top:10px;
         display: flex;
+        flex-direction: column;
         justify-content: center;
+        align-items: center;
+
+    }
+    .section_h2{
+        margin-bottom: 50px;
+        padding: 0;
+    }
+    .menu-page h2{
+        position: relative;
+        left: 325px;
     }
 }
