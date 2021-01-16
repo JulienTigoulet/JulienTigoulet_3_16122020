@@ -5,6 +5,193 @@
   margin: 0px;
 }
 
+.menu-page {
+  font-family: "roboto";
+  background-color: #f6f6f6;
+}
+.menu-page h2 {
+  width: 40px;
+  border-bottom: 3px solid #99E2D0;
+  font-weight: 300;
+  font-size: 1em;
+  margin-left: 40px;
+  margin-bottom: 14px;
+  margin-top: 40px;
+}
+.menu-page h1 {
+  font-family: "Shrikhand";
+  font-weight: lighter;
+}
+
+.menu-header_logonav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 63px;
+  margin-left: 23px;
+  margin-right: 114px;
+}
+.menu-header_img {
+  height: 254px;
+  width: 100%;
+  overflow: hidden;
+}
+.menu-header_img img {
+  width: 100%;
+}
+.menu-header_titre-i {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  border-radius: 30px 30px 0 0;
+  padding-top: 35px;
+  margin-top: -35px;
+  background-color: #f6f6f6;
+}
+
+.menu-allcard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.menu-allcard .menu-card--modifier {
+  width: 350px;
+  height: 69px;
+  background-color: white;
+  border-radius: 15px;
+  margin-bottom: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.menu-allcard .menu-card--modifier .menu-card_nom {
+  margin-left: 10px;
+  margin-top: 5px;
+}
+.menu-allcard .menu-card--modifier .menu-card_intitule-prix {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  margin-left: 10px;
+  margin-right: 22px;
+}
+.menu-allcard .menu-card--modifier .menu-card_prix {
+  font-weight: bold;
+}
+.menu-allcard .menu-card--modifier .menu-card_legende {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 69px;
+  justify-content: space-between;
+}
+.menu-allcard .menu-card--modifier .menu-card_intitule {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  height: 19px;
+}
+
+.menu-card_hover_box {
+  width: 56px;
+  height: 69px;
+  background-color: #99E2D0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  position: relative;
+  bottom: 62px;
+  left: 295px;
+  border-radius: 0 15px 15px 0;
+  opacity: 0;
+}
+
+.menu-card--modifier:hover .menu-card_hover_box {
+  opacity: 1;
+  animation: faderight 1s ease-in-out;
+}
+.menu-card--modifier:hover .menu-card_hover_circle {
+  animation: circlespin 1s ease-in-out;
+}
+.menu-card--modifier:hover p {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  height: 19px;
+  width: 80%;
+  transition: all 1s ease-in-out;
+}
+.menu-card--modifier:hover h3 {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 80%;
+}
+
+.menu-card_hover_circle {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  color: #99E2D0;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes Menusmooth {
+  0% {
+    opacity: 1;
+  }
+  1% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.menu-entree {
+  animation: Menusmooth 2s ease-in-out;
+}
+
+.menu-plat {
+  animation: Menusmooth 4s ease-in-out;
+}
+
+.menu-dessert {
+  animation: Menusmooth 6s ease-in-out;
+}
+
+.btn-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 83px;
+}
+.btn-menu_commander {
+  width: 186px;
+  height: 49px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(#FF79DA, #9356DC);
+  border-radius: 25px;
+  color: white;
+  margin-top: 50px;
+  box-shadow: 0px 5px 10px #e7e7e7;
+}
+.btn-menu_commander:hover {
+  box-shadow: 5px 5px 20px #cacaca;
+  background: linear-gradient(#ff9de4, #b084e5);
+  transition: ease-in-out 1s;
+}
+
 .accueil-page {
   max-width: 1350px;
   margin: auto;
@@ -134,6 +321,12 @@
   background: linear-gradient(#FF79DA, #9356DC);
   border-radius: 25px;
   color: white;
+  box-shadow: 0px 5px 10px #cacaca;
+}
+.siteheader-btn:hover {
+  box-shadow: 5px 5px 20px #cacaca;
+  background: linear-gradient(#ff9de4, #b084e5);
+  transition: ease-in-out 1s;
 }
 
 .nav {
@@ -263,7 +456,7 @@
 }
 .section-card_heartfull:hover {
   opacity: 1;
-  color: #9356DC;
+  color: #FF79DA;
   transition: ease-in-out 1.5s;
 }
 
@@ -318,7 +511,7 @@
   }
 
   .menu-header h1 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 
   .menu-header_logonav i {

@@ -1,5 +1,6 @@
 @import"./base/police";
 @import"./utils/variables";
+@import"./pages/menu";
 .accueil-page{
     max-width: 1350px;
     margin: auto;
@@ -111,6 +112,12 @@
     background:linear-gradient($secondaire-color,$primaire-color);
     border-radius: 25px;
     color:white;
+    box-shadow: 0px 5px 10px #cacaca;
+    &:hover{
+        box-shadow: 5px 5px 20px #cacaca;
+        background:linear-gradient($secondaire-color-light,$primaire-color-light);
+        transition: ease-in-out 1s;
+    }
 }
 // Navigation
 .nav{
@@ -238,7 +245,7 @@
     }
     &_heartfull:hover{
         opacity: 1;
-        color:$primaire-color;
+        color:($secondaire-color);
         transition: ease-in-out 1.5s;
     }   
 }

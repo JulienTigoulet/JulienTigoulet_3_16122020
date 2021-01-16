@@ -120,6 +120,7 @@ h1{
 .menu-card--modifier:hover p{
     text-overflow: ellipsis;
     overflow:hidden;
+    white-space:nowrap;
     width: 80%;
     height: 19px;
     transition:all 1s ease-in-out;
