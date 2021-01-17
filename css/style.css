@@ -52,9 +52,9 @@
 
 .menu-allcard {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 .menu-allcard .menu-card--modifier {
   width: 350px;
@@ -77,6 +77,7 @@
   margin-top: 15px;
   margin-left: 10px;
   margin-right: 22px;
+  transition: width 2s ease-in-out;
 }
 .menu-allcard .menu-card--modifier .menu-card_prix {
   font-weight: bold;
@@ -123,7 +124,6 @@
   white-space: nowrap;
   height: 19px;
   width: 80%;
-  transition: all 1s ease-in-out;
 }
 .menu-card--modifier:hover h3 {
   text-overflow: ellipsis;
@@ -132,6 +132,25 @@
   width: 80%;
 }
 
+@keyframes circlespin {
+  0% {
+    transform: rotate(0);
+  }
+  /* 50% {transform: rotate(180deg);} */
+  100% {
+    transform: rotate(380deg);
+  }
+}
+@keyframes faderight {
+  0% {
+    transform: translate3d(100%, 0, 0);
+    opacity: 0;
+  }
+  100% {
+    transform: none;
+    opacity: 1;
+  }
+}
 .menu-card_hover_circle {
   width: 20px;
   height: 20px;
@@ -179,8 +198,8 @@
   width: 186px;
   height: 49px;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   background: linear-gradient(#FF79DA, #9356DC);
   border-radius: 25px;
   color: white;
@@ -269,8 +288,8 @@
 }
 .siteheader_logo {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   width: 170px;
   height: 50px;
   padding: 6px;
@@ -317,8 +336,8 @@
   width: 218px;
   height: 50px;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   background: linear-gradient(#FF79DA, #9356DC);
   border-radius: 25px;
   color: white;
@@ -338,9 +357,9 @@
 }
 .nav-btn_flex {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .nav-btn {
@@ -386,9 +405,9 @@
 }
 .section_flex {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 .section_h2 {
   padding-top: 53px;
@@ -414,8 +433,8 @@
   border-radius: 15px 15px 0 0;
   display: flex;
   justify-content: center;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
 }
 .section-card-img_new {
   position: relative;
