@@ -2,7 +2,7 @@
 @import"_breakpoint.scss";
 @import"_media.scss";
 
-@include xlphone{
+@include xlphone{ 
     .section-card{
         width:290px;
         overflow: hidden;
@@ -31,13 +31,68 @@
         margin-right:23px;
     }
     .menu-card--modifier{
-        max-width: 300px;
-        
+        width:100%
     }
-    .menu-card--modifier:hover .menu-card_hover_box{
-        left: 250px;
+    .menu-allcard{
+        margin: 10px;
+    }
+    .menu-card_inti:hover{
+        width: 72%;
+        transition: all 300ms;
+    }
+    .menu-card_flex:hover{
+        width: 82%;
+    }
+    .menu-card_inti{
+        width: 86%;
+    }
+    .menu-card_nom{
+        font-size: 0.86rem;
+    }
+    .menu-card_intitule{
+        font-size: 0.9rem;
+    }
+    h3{
+        text-overflow: ellipsis;
+        overflow:hidden;
+        white-space:nowrap;
     }
 }
+
+@media (min-width: 376px) and (max-width: 425px){
+    .menu-card--modifier{
+        width:100%
+    }
+    .menu-allcard{
+        margin: 10px;
+    }
+    .menu-card_inti:hover{
+        width: 80%;
+        transition: all 700ms;
+    }
+    .menu-card_flex:hover{
+        width: 86%;
+    }
+}
+@media (min-width: 350px) and (max-width:375px){
+    .menu-card--modifier{
+        width:100%;
+    }
+    .menu-card_inti{
+        width: 86%;
+        transition: all 700ms;
+    }
+    .menu-card_flex:hover{
+        width: 86%;
+    }
+    .menu-allcard{
+        margin: 10px;
+    }
+    p{
+        max-width: 250px;
+    }
+}
+
 @include tablet{
     .siteheader{
         width: 50%;
@@ -61,11 +116,7 @@
         justify-content: center;
     }
     .menu-card--modifier{
-        min-width: 500px;
         width: 80%;
-    }
-    .menu-card--modifier:hover .menu-card_hover_box{
-        left: 450px;
     }
     .section_flex{
         flex-direction:row;
